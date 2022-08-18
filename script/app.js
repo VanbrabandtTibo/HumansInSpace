@@ -43,7 +43,7 @@ function pieChart(){
 
 // fill attributes
 let showResult = queryResponse => {
-	document.querySelector('.js-meoteoriteCount').innerHTML = `There are <big style="color:#ba1e68">${queryResponse.number}</big> humans in space!`;
+	document.querySelector('.js-humansCount').innerHTML = `There are <big style="color:#ba1e68">${queryResponse.number}</big> humans in space!`;
 	for (var i = 0; i < queryResponse.people.length;i++)
 	{
 		var spacecraft = queryResponse.people[i].craft;
