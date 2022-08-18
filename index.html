@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Earth Meteorite Landings</title>
+    <meta name="description" content="An app about all the meteorites who landed on planet earth.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#cce7ff">
+    <meta name="theme-color" content="#cce7ff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img\svg\meteoriet.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="img\svg\meteoriet.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="img\svg\meteoriet.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#0f3557">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <script src="script/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <main class="o-row">
+        <div class="o-section o-section--lg">
+            <div class="o-container">
+                <div class="c-header">
+                        <h1 class="logoText">HUMANS <mark class="purple">IN</mark> SPACE </h1>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="o-section o-section--lg">
+            <div class="o-container">
+                <div class="o-layout o-layout--align-center">
+                    <div class="o-layout__item">
+                        <div class="c-intro">
+                            <p style="font-size: 14px;">On this one paged website, you can find all the <mark class="purple">humans</mark> that are in space right now.<br>
+                                You find the <mark class="purple">total count</mark> of them and you can get <mark class="purple">detailed info</mark> about who we speak at the moment.</p>
+                        </div>
+                    </div>
+                    <div class="o-layout__item">
+                        <div class="c-meteorite-count">
+                            <h2 class="js-meoteoriteCount">Loading...</h2>
+                        </div> 
+                    </div>
+                    <div class="o-layout__item">
+                        <div class="c-ratio">
+                            <h3>Ratio between <mark class="purple">Spacecrafts</mark> in space</h3>
+                            <div class="c-chart">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="o-section o-section--lg">
+            <div class="o-container">
+                <div class="o-layout o-layout--align-center">
+                    <div class="o-layout__item">
+                    </div>
+                    <div class="o-layout__item">
+                        <div class="spinner scroll-down"> <a href="#down" class="animate"></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="down">
+            <div class="o-section o-section--lg">
+                <div class="o-container">
+                    <div class="o-layout o-layout--align-center">
+                            <div class="o-layout__item">
+                                <div class="c-human">
+                                    <h1><mark class="purple">Humans</mark> right now in space</h1>
+                                    <table class="c-table-info js-humansinspace" style="border: none;">
+                                        <tr>
+                                            <th class="c-table-title">Name</th>
+                                            <th class="c-table-title">Surname</th>
+                                            <th class="c-table-title">Spacecraft</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
