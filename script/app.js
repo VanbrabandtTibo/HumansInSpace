@@ -69,7 +69,7 @@ let showResult = queryResponse => {
 
 //Get API
 const getAPI = function(){
-	const url = `http://api.open-notify.org/astros.json`;
+	const url = `https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json`;
 	fetch(url)
 		.then(req => {
 			if (!req.ok){
